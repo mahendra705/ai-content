@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,44 +19,47 @@ const config = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "#d1d5db", // Light gray border
+        input: "#f3f4f6", // Light input background
+        ring: "#d1d5db", // Ring color to match the border
+        background: "#121212", // Dark background for dark mode
+        foreground: "#3f3f3f", // Light foreground text
         primary: {
-          DEFAULT: "#704ef8",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#333333", // Light black for primary elements
+          foreground: "#333333", // Light black for primary text
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#d1d5db", // Light gray as secondary
+          foreground: "#1f1f1f", // Dark text on secondary
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "#f87171", // Red color for destructive actions
+          foreground: "#ffffff", // White text on destructive elements
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#6b7280", // Muted gray text
+          foreground: "#3f3f3f", // Light foreground on muted elements
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#4ade80", // Green accent
+          foreground: "#ffffff", // White text on accent elements
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "#1f1f1f", // Dark popover background
+          foreground: "#3f3f3f", // Light text on popover
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "#1f1f1f", // Dark background for cards
+          foreground: "#3f3f3f", // Light text on cards
+        },
+        Button: {
+          DEFAULT: "#ffffff", // White button text
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "12px", // Larger rounded corners
+        md: "8px",  // Medium rounded corners
+        sm: "4px",  // Small rounded corners
       },
       keyframes: {
         "accordion-down": {

@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect } from 'react'
-import UsageTrack from './UsageTrack'
 
 function SideNav() {
 
@@ -18,11 +17,6 @@ function SideNav() {
             name:'History',
             icon:FileClock,
             path:'/dashboard/history'
-        },
-        {
-            name:'Billing',
-            icon:WalletCards,
-            path:'/dashboard/billing'
         },
         {
             name:'Setting',
@@ -40,7 +34,7 @@ function SideNav() {
   return (
     <div className='h-screen relative p-5 shadow-sm border bg-white'>
         <div className='flex justify-center'>
-        <Image src={'/logo.svg'} alt='logo' width={120} height={100} />
+        <Image src={'/cp_logo.svg'} alt='logo' width={120} height={100} />
         </div>
         <hr className='my-6 border' />
         <div className='mt-3'>
@@ -58,7 +52,6 @@ function SideNav() {
             ))}
         </div>
         <div className='absolute bottom-10 left-0 w-full'>
-            <UsageTrack/>
         </div>
     </div>
   )
